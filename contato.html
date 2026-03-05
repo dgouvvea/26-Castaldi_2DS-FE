@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato com Alura</title>
+  <title>Contato Alura</title>
   <link rel="stylesheet" href="novostyle.css">
 </head>
 
@@ -18,10 +18,78 @@
       </nav>
     </header>
   </div>
+  <main>
+    <form action="">
+      <label for="nomecompleto">Nome e Sobreno</label>
+      <input type="text" id="nomecompleto" class="input-padrao" required placeholder="Nome completo">
 
+      <label for="email">Email</label>
+      <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com.br">
 
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
-  
+      <label for="mensagem">Mensagem</label>
+      <textarea class="input-padrao" required placeholder="Digite sua mensagem" id="mensagem" cols="70"
+        rows="10"></textarea>
+
+      <fieldset>
+        <legend>Como prefere o nosso contato</legend>
+
+        <label for="radio-email">
+          <input type="radio" name="contato" id="radio-email">Email
+        </label>
+
+        <label for="radio-telefone">
+          <input type="radio" name="contato" value="" id="radio-telefone">Telefone
+        </label>
+
+        <label for="radio-whatsapp">
+          <input type="radio" name="contato" id="radio-whatsapp">Whatsapp
+        </label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Qual horarário prefere ser atendido?</legend>
+        <select name="" id="">
+          <option value="">Manhã</option>
+          <option value="">tarde</option>
+          <option value="">Noite</option>
+        </select>
+
+      </fieldset>
+
+      <label for="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+      <input type="submit" value="Enviar Formulário" class="enviar">
+
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Dia</th>
+          <th>Horário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Segunda</td>
+          <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+          <td>Quarda</td>
+          <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+          <td>Sexta</td>
+          <td>8h ~ 20h</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
   <footer>
     <img src="https://github.com/dgouvvea/Img/blob/main/A/logo-branco.png?raw=true" alt="Logo da Alura">
     <p class="copy">&copy; Copyrght Barbearia Alura – 2019</p>
